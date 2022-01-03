@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+*{
+    font-family: 'Nunito',sans-serif;
+}
+.container{
+    padding-top: 40px;
+    box-sizing: 600px;
+}
+h2{
+    text-align: center;
+    padding-bottom: 10px;
+}
+table{
+    border-collapse:collapse;
+}
+.card{
+    position: relative;
+    width: 300px;
+    height: 150px;
+    border-radius: 12px;
+    background: #f8f8f8;
+    justify-content: center;
+    align-items: center;
+}
+.modified-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+th{
+    color: honeydew;
+    padding: 10px;
+}
+tr{
+    width: 100%;
+    height: auto;
+}
+td{
+    border: 1px solid rgb(223, 223, 223);
+    padding: 15px;
+}
+thead{
+    background: #7D89F5;
+}
+a{
+    font-family: 'Nunito',sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+}
+button{
+    padding: 10px 25px;
+    background-color: #7D89F5;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-bottom: 20px;
+}
+button:hover{
+    background-color: #4852aa;
+}
+
+.opt{
+	font-size: 16px;
+	width: 80px;
+	margin-top: 15px;
+	border-radius: 2px;
+	padding: 10px;
+}
+.tombol1{
+	width: 100px;
+	background: #3f8f43;
+	border-radius: 5px;
+	padding: 6px;
+	color: honeydew;
+	font-size: 15px;
+	text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.tombol2{
+	width: 100px;
+	background: #f82b35;
+	border-radius: 7px;
+	padding: 6px;
+	color: honeydew;
+	font-size: 15px;
+	text-decoration: none;
+}
+.tombol1:hover{
+    background: #234e26;
+}
+.tombol2:hover{
+    background: #9e1a21;
+}

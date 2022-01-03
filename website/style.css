@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
+}
+li,a,button{
+    font-family: 'Nunito',sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+}
+
+/*Navigasi*/
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+    background-color: #7D89F5;
+}
+h2{
+    font-family: 'Nunito',sans-serif;
+    cursor: pointer; 
+    color: white;
+    font-weight: bold;
+}
+.nav_links{
+    list-style: none;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+    font-weight: bold;
+}
+.nav_links li a:hover{
+    color: navy;
+}
+button{
+    padding: 9px 25px;
+    background-color: #7D89F5;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: #2b305c;
+}
+
+/*Pencarian*/
+h1{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Nunito',sans-serif;
+
+}
+h4{
+    color: rgb(241, 241, 241);
+    text-align: center;
+    font-family: 'Nunito',sans-serif;
+    margin-bottom: 25px;
+    font-size: 19px;
+}
+.cari{
+    width: 100%;
+    height: 449px;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(tugu2.jpg);
+    background-size: cover;
+    display: flex;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito',sans-serif;
+    text-align: center;
+}
+.search{
+    width: 550px;
+    height: 51px;
+    padding: 10px;
+    border: none;
+    border-radius: 25px 0 0 25px;
+    outline: none;
+    background: white;
+}
+input[type="text"]{
+    font-family: 'Nunito',sans-serif;
+    padding: 0 25px;
+}
+
+/*Destinasi Disukai*/
+ul{
+    padding-left: 130px;
+}
+.recommended{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 35px;
+    padding-left: 120px;
+}
+.modified-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.card{
+    position: relative;
+    width: 500px;
+    height: 250px;
+    border-radius: 20px;
+    background: #f8f8f8;
+    margin-right: 60px;
+}
+.card span{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: -10px;
+    left: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.card span::before{
+    content: 'Destinasi Terbaik';
+    width: 150%;
+    height: 40px;
+    background: #7D89F5;
+    position: absolute;
+    transform: rotate(-45deg) translateY(-20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito',sans-serif;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.card span::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #2b305c;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    box-shadow: 140px -140px #2b305c;
+}
+
+/*Konten*/
+.active{
+    display: inline-block; 
+    text-decoration: none; 
+    padding: 5px 20px; 
+    background: #7D89F5; 
+    border-radius: 20px;
+}
+.content-img{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    padding-left: 110px;
+    margin-left: 9px;
+}
+.modified-img2{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.card2{
+    display: inline-block;
+    position: relative;
+    width: 500px;
+    height: 250px;
+    border-radius: 20px;
+    background: #f8f8f8;
+    margin-right: 60px;
+    justify-content: center;
+    align-items: center;
+}
+h5{
+    display: inline-block;
+    font-family: 'Nunito',sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #2b305c;
+    text-align: justify;
+}
+p{
+    text-align: justify;
+    font-family: 'Nunito',sans-serif;
+    font-size: 13px;
+    text-overflow: clip;
+}
+.button-content{
+    align-items: center;
+    justify-items: center;
+    text-align: right;
+    padding-right: 190px;
+    padding-top: 40px;
+}
+
+/*Footer*/
+.footer{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    background: #7D89F5;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    text-align: center;
+} 
+h6{
+    display: inline-block;
+    color: whitesmoke;
+    font-family: 'Nunito',sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+    padding-top: 5px;
+}
+.icon{
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.icon a img:hover{
+    background-color: #2b305c;
+    border-radius: 12px;
+}
